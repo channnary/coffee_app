@@ -1,0 +1,6 @@
+<!-- res/drawable/round_dot.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/blue"/> <!-- Set the desired color for the dot -->
+    <size android:width="20dp" android:height="20dp"/> <!-- Set the desired size of the dot -->
+    <corners android:radius="10dp"/> <!-- Make the radius half of the width/height to make it a circle -->
+</shape>
