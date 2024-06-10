@@ -3,6 +3,7 @@ package com.pechchannary.luxwalk;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
@@ -32,6 +33,10 @@ public class FavouriteActivity extends AppCompatActivity {
                 return navbarActivity.handleNavigation(item.getItemId());
             }
         });
+
+        GoBackButtonUtil.setupGoBackButton(this, R.id.goBack);
+
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 //        ImageView backButton = findViewById(R.id.backButton);

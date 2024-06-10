@@ -4,6 +4,7 @@ package com.pechchannary.luxwalk;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,8 +15,9 @@ public class NotificationActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_notification);
-
+        GoBackButtonUtil.setupGoBackButton(this, R.id.goBack);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         NavbarActivity navbarActivity = new NavbarActivity(this);

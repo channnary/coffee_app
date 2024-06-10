@@ -29,7 +29,8 @@
         <activity android:name=".CheckoutActivity" />
         <activity android:name=".NotificationActivity" />
         <activity android:name=".ProfileActivity"/>
-        <activity android:name=".FavouriteActivity"/>
+        <activity android:name=".FavouriteActivity"
+            />
     </application>
 
 </manifest>

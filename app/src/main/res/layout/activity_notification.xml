@@ -31,6 +31,7 @@
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="start"
+                android:id="@+id/goBack"
                 android:src="@drawable/gobackicon" />
 
             <TextView

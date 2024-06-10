@@ -15,7 +15,7 @@
         android:orientation="vertical"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:id="@+id/headerView"
         tools:ignore="MissingConstraints">
         <LinearLayout
@@ -27,8 +27,9 @@
 
             <ImageView
                 android:layout_width="30dp"
-                android:layout_height="30dp"
+                android:layout_height="match_parent"
                 android:layout_gravity="start"
+                android:id="@+id/goBack"
                 android:src="@drawable/gobackicon" />
 
             <TextView

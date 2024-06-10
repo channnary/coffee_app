@@ -63,7 +63,7 @@
                     android:backgroundTint="#5B9FE3"
                     android:padding="10dp"
                     android:textSize="18dp"
-                    android:id="@+id/afterPayment"
+                    android:onClick="openSecondActivity"
                     android:text="Back To Shopping"
                     android:textColor="@color/white" />
             </LinearLayout>

@@ -15,6 +15,8 @@ public class ShowCartActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_cart);
 
+        GoBackButtonUtil.setupGoBackButton(this, R.id.goBack);
+
     }
 
     public void showPayment(View view) {

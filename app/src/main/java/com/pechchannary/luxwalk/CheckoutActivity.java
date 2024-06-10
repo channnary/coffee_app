@@ -28,7 +28,7 @@ public class CheckoutActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
 
         setContentView(R.layout.activity_check_out);
-
+        GoBackButtonUtil.setupGoBackButton(this, R.id.goBack);
 
 
         Button dialogPaymentButton = findViewById(R.id.dialogPayment);

@@ -21,7 +21,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_profile);
 
-
+        GoBackButtonUtil.setupGoBackButton(this, R.id.goBack);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         NavbarActivity navbarActivity = new NavbarActivity(this);
@@ -34,17 +34,6 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
-
-        ImageView backButton = findViewById(R.id.backButton);
-
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Call finish() to close the current activity and go back
-                finish();
-                System.out.println("hellowork");
-            }
-        });
     }
 
 }
