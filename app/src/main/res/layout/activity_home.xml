@@ -350,7 +350,6 @@
                 android:layout_height="match_parent"
                 android:onClick="showDetail"
                 android:orientation="vertical">
-
                 <ImageView
                     android:id="@+id/armousri"
                     android:layout_width="match_parent"
