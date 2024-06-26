@@ -1,4 +1,4 @@
-package com.pechchannary.luxwalk;
+package com.samichankesor.coffeeApp;
 
 import android.app.Activity;
 import android.view.View;

@@ -1,12 +1,6 @@
-package com.pechchannary.luxwalk;
+package com.samichankesor.coffeeApp;
 
-import static androidx.core.content.ContextCompat.startActivity;
-
-import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.pechchannary.luxwalk">
+    package="com.samichankesor.coffeeApp">
 
     <application
         android:allowBackup="true"
@@ -14,7 +14,7 @@
         android:dataExtractionRules="@xml/data_extraction_rules">
 
         <activity
-            android:name=".MainActivity"
+            android:name="com.samichankesor.coffeeApp.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,13 +23,13 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".HomeActivity" />
-        <activity android:name=".ShowDetailActivity" />
-        <activity android:name=".ShowCartActivity" />
-        <activity android:name=".CheckoutActivity" />
-        <activity android:name=".NotificationActivity" />
-        <activity android:name=".ProfileActivity"/>
-        <activity android:name=".FavouriteActivity"
+        <activity android:name="com.samichankesor.coffeeApp.HomeActivity" />
+        <activity android:name="com.samichankesor.coffeeApp.ShowDetailActivity" />
+        <activity android:name="com.samichankesor.coffeeApp.ShowCartActivity" />
+        <activity android:name="com.samichankesor.coffeeApp.CheckoutActivity" />
+        <activity android:name="com.samichankesor.coffeeApp.NotificationActivity" />
+        <activity android:name="com.samichankesor.coffeeApp.ProfileActivity"/>
+        <activity android:name="com.samichankesor.coffeeApp.FavouriteActivity"
             />
     </application>
 

@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.pechchannary.luxwalk"
+    namespace = "com.samichankesor.coffeeApp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.pechchannary.luxwalk"
+        applicationId = "com.samichankesor.coffeeApp"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

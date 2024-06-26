@@ -1,10 +1,8 @@
-package com.pechchannary.luxwalk;
-
+package com.samichankesor.coffeeApp;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -12,16 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class FavouriteActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
 
-        setContentView(R.layout.activity_favorite);
-
-
+        setContentView(R.layout.activity_home);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         NavbarActivity navbarActivity = new NavbarActivity(this);
@@ -34,21 +30,23 @@ public class FavouriteActivity extends AppCompatActivity {
             }
         });
 
-        GoBackButtonUtil.setupGoBackButton(this, R.id.goBack);
-
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
-//        ImageView backButton = findViewById(R.id.backButton);
-//
-//        backButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // Call finish() to close the current activity and go back
-//                finish();
-//                System.out.println("hellowork");
-//            }
-//        });
+
+
     }
+
+    public void showDetail(View view) {
+        Intent intent = new Intent(this, ShowDetailActivity.class);
+        startActivity(intent);
+    }
+
+    public void showCart(View view) {
+        Intent intent = new Intent(this, ShowCartActivity.class);
+        startActivity(intent);
+    }
+
+
+
 
 }

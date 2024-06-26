@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LuxWalk"
+rootProject.name = "Coffee App"
 include(":app")
  

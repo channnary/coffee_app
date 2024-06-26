@@ -1,4 +1,4 @@
-package com.pechchannary.luxwalk;
+package com.samichankesor.coffeeapp;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.pechchannary.luxwalk", appContext.getPackageName());
+        assertEquals("com.samichankesor.coffeeapp", appContext.getPackageName());
     }
 }

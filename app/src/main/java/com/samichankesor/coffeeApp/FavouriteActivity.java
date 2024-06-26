@@ -1,5 +1,4 @@
-package com.pechchannary.luxwalk;
-
+package com.samichankesor.coffeeApp;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -10,14 +9,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class NotificationActivity extends AppCompatActivity {
+public class FavouriteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_notification);
-        GoBackButtonUtil.setupGoBackButton(this, R.id.goBack);
+
+        setContentView(R.layout.activity_favorite);
+
+
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         NavbarActivity navbarActivity = new NavbarActivity(this);
@@ -30,6 +31,21 @@ public class NotificationActivity extends AppCompatActivity {
             }
         });
 
-    }
-}
+        GoBackButtonUtil.setupGoBackButton(this, R.id.goBack);
 
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+
+//        ImageView backButton = findViewById(R.id.backButton);
+//
+//        backButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // Call finish() to close the current activity and go back
+//                finish();
+//                System.out.println("hellowork");
+//            }
+//        });
+    }
+
+}

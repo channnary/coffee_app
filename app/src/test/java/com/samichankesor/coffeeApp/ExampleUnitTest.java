@@ -1,4 +1,4 @@
-package com.pechchannary.luxwalk;
+package com.pechchannary.coffeeApp;
 
 import org.junit.Test;
 

@@ -1,8 +1,8 @@
-package com.pechchannary.luxwalk;
-import android.content.Intent;
+package com.samichankesor.coffeeApp;
+
+
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -10,14 +10,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class HomeActivity extends AppCompatActivity {
+public class NotificationActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_notification);
+        GoBackButtonUtil.setupGoBackButton(this, R.id.goBack);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottomNavigationView);
         NavbarActivity navbarActivity = new NavbarActivity(this);
@@ -30,23 +30,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-
-
-
-
     }
-
-    public void showDetail(View view) {
-        Intent intent = new Intent(this, ShowDetailActivity.class);
-        startActivity(intent);
-    }
-
-    public void showCart(View view) {
-        Intent intent = new Intent(this, ShowCartActivity.class);
-        startActivity(intent);
-    }
-
-
-
-
 }
+

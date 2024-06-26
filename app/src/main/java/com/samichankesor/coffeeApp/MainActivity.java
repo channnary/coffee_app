@@ -1,4 +1,4 @@
-package com.pechchannary.luxwalk;
+package com.samichankesor.coffeeApp;
 
 import android.content.Intent;
 import android.graphics.Color;
